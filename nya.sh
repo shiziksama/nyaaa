@@ -47,10 +47,6 @@ do
 		echo "$c"|sendsms
 		echo "$c">>~/.conky/series
 		echo "$c"
-			if [ "$category" = 'K-on ! !' ] 
-			then 
-			echo "$c"|mutt -x -s "$category" toshakins@gmail.com -a "$P/tmpsubs/$sl" "$P/torrents/$c.torrent"
-			fi
 		fi
 	done
 	mv "$P/tmpsubs/"* "$P/allshit/$category/"
